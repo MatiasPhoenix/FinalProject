@@ -21,7 +21,7 @@ public class Evento {
     @Column(name = "numero_posti_disponibili")
     private int numeroPostiDisponibili;
     @ManyToMany
-    @JoinColumn(name = "utente_id")
+    @JoinTable(name = "listaUtenti")
     private List<Utente> utenti;
 
 
